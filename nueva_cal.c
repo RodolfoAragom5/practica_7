@@ -36,7 +36,35 @@ int main()
   int a=0, b=0;
   int respuesta;
 
-  printf("Dime que operación deseas realizar: \n");
-  printf("1 .- Suma\n");
+  printf("Dime la operación que quieres usar");
+  printf("1.- SUMA\n");
+  printf("2.- RESTA\n");
+  printf("3.- MULTIPLICACION\n");
+  printf("4.- DIVISION\n");
+  scanf("%d",&option);
   
+  switch(opcion)
+  {
+    default:
+      respuesta = 0;
+      break;
+    case 1:
+      respuesta = suma(a,b);
+      break;
+    case 2:
+      respuesta = resta(a,b);
+      break;
+    case 3:
+      respuesta = mult(a,b);
+      break;
+    case 4:
+      respuesta = divi(a,b);
+      break;
+    case 5:
+      respuesta = pot(a,b);
+      break;
+  }
+
+  printf("El resultado de la operación es: %d\n", respuesta);
+  return 0;
 }
