@@ -32,3 +32,11 @@ int pot(int a, int b)
 }
 
 int main()
+{
+  int a=0, b=0;
+  int respuesta;
+
+  printf("Dime que operación deseas realizar: \n");
+  printf("1 .- Suma\n");
+  
+}
